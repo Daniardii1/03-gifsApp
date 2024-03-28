@@ -1,0 +1,16 @@
+<div class="border-right p-3" id="sidebar">
+  <h3>GifsApp</h3>
+  <hr>
+
+  <div
+    *ngIf="tags.length > 0"
+    class="list-group list-reset">
+    <button
+      *ngFor="let tag of tags"
+      (click)="searchTag(tag)"
+      class="list-group-item list-group-item-action"
+    >
+      {{ tag | titlecase }}
+    </button>
+  </div>
+</div>

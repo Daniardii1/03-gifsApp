@@ -1,0 +1,12 @@
+input[type="text"]:focus {
+  outline: none !important;
+  box-shadow: 0 0 15px #697586; /* Añade un resplandor con el color que elijas */
+  border-color: #6C737F;
+  border-radius: 5px;
+}
+
+input::selection {
+  background: #CDD5DF;
+  color: #4B5565;
+}
+
